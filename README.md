@@ -37,12 +37,13 @@ thymeleaf + springboot
 
 
 ## 使用
+```
 前台：http://localhost:8080/frontdesk/index
 账号：user 密码 123456
 后台：http://localhost:8080/backstage/index
 总管理员账号：admin 密码 123456
 分管理员账号：admin 密码 123456
-
+```
 
 
 
