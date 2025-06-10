@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itbaizhan.travel.mapper.MemberMapper">
+
+    <insert id="insert2">
+        INSERT INTO member (username, password, birthday, sex, phoneNum,email,active)
+        VALUES (#{username}, #{password}, #{birthday}, #{sex}, #{phoneNum}, #{email}, 1)
+    </insert>
+
+    <delete id="deleteByMid" parameterType="int">
+        DELETE from member where mid = #{mid}
+    </delete>
+
+    <delete id="deleteMemberAllFavourite">
+        DELETE from favorite where mid = #{mid}
+    </delete>
+</mapper>
